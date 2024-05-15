@@ -1,0 +1,10 @@
+#!/bin/bash
+
+echo "Version of ubuntu:"
+lsb_release -a
+
+echo "All users with bash:"
+cat /etc/passwd | grep '/bin/bash'
+
+echo "Ports:"
+netstat -tuln
